@@ -53,4 +53,8 @@ The following components are integral to the SoftCart data platform architecture
 - Hands-on experience with a variety of databases including **NoSQL (MongoDB)** and **Relational Databases (MySQL, PostgreSQL)**.
 - Deepened knowledge of **Big Data processing** with **Hadoop** and **Apache Spark**.
 - Developed interactive BI dashboards using **Google Looker** for real-time data visualization.
+![image](https://github.com/user-attachments/assets/beaabacf-5e56-4f82-a103-c5a9b1f57c20)
+![image](https://github.com/user-attachments/assets/c3f263da-0e43-4a8e-8074-a543c63ff3d6)
+
+
 
