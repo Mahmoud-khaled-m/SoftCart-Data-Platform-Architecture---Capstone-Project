@@ -15,17 +15,6 @@ The architecture built for SoftCart leverages MySQL and MongoDB for storing tran
 * Business Intelligence (BI) Dashboard: Google Looker
 * Data Pipelines: Apache Airflow
 
-## 🔧 Tools & Technologies
-
-- **OLTP Database:** MySQL  
-- **NoSQL Database:** MongoDB  
-- **Staging Data Warehouse:** PostgreSQL  
-- **Production Data Warehouse:** DB2 on Cloud  
-- **Big Data Platform:** Hadoop  
-- **Big Data Analytics:** Apache Spark  
-- **Business Intelligence (BI) Dashboard:** IBM Cognos Analytics  
-- **Data Pipelines:** Apache Airflow  
-- **Cloud Provider:** IBM Cloud
 
 ## 🏗️ Architecture Overview
 
@@ -37,12 +26,31 @@ The following components are integral to the SoftCart data platform architecture
 
 2. **Data Pipelines:**
    - Data is periodically extracted from **MongoDB** and **MySQL** and loaded into the **Staging Data Warehouse** using **Apache Airflow**.
-   - Once the data is processed in the staging area, it is transferred to the **Production Data Warehouse (DB2 on Cloud)** for further analysis.
+   - Once the data is processed in the staging area, it is transferred to the **PostgreSQL** for further analysis.
 
 3. **Big Data Analytics:**
    - Data from the staging warehouse is processed using **Apache Spark** to perform large-scale analytics, including customer behavior analysis and sales trend forecasting.
    - Hadoop is used as the distributed file system to store large datasets.
 
 4. **Business Intelligence:**
-   - **IBM Cognos Analytics** is utilized to create interactive dashboards for SoftCart’s business stakeholders, allowing them to visualize key metrics and insights derived from the processed data.
+   - **Google Looker** is utilized to create interactive dashboards for SoftCart’s business stakeholders, allowing them to visualize key metrics and insights derived from the processed data.
+
+## Project Workflow
+
+1. **Data Extraction:**
+   - Data is periodically extracted from **MongoDB** and **MySQL**.
+2. **Data Transformation:**
+   - The extracted data is transformed according to the business logic using **Apache Spark**.
+3. **Data Loading:**
+   - Transformed data is loaded into the **Staging Warehouse** (PostgreSQL).
+4. **Data Analysis & Reporting:**
+   - The data is processed in **Apache Spark** for analytics.
+   - Interactive dashboards are created using **Google Looker** to generate insights for business stakeholders.
+
+## Lessons Learned
+
+- Gained proficiency in designing and implementing **ETL pipelines** with **Apache Airflow**.
+- Hands-on experience with a variety of databases including **NoSQL (MongoDB)** and **Relational Databases (MySQL, PostgreSQL)**.
+- Deepened knowledge of **Big Data processing** with **Hadoop** and **Apache Spark**.
+- Developed interactive BI dashboards using **Google Looker** for real-time data visualization.
 
