@@ -16,7 +16,7 @@ The architecture built for SoftCart leverages MySQL and MongoDB for storing tran
 * Data Pipelines: Apache Airflow
 
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The following components are integral to the SoftCart data platform architecture:
 
